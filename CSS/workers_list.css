@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand img{
+height: 40px;
+}
+.card-image{
+    height: 250px;
+}
+.nav-link{
+    color: black;
+}
+.active{
+    color: blue;
+    font-weight: bold;
+    border-bottom: 3px solid blue;
+}
+.tbody{
+    background-color: #9ec5fe;
+}
+.table{
+   width: 1000px;
+}
+.button{
+    margin-right: 125px !important;
+}
+.container{
+    margin-bottom: 1px !important;
+}
+.bg-light{
+    border-bottom: 1px solid lightgray;
+}
+
+@media (min-width: 320px) and (max-width: 490px) { 
+
+    .button{
+        margin-right: 2px !important;
+    }
+    .ms-5 {
+        margin-left: 0rem!important;
+    }
+    
+    .ps-5 {
+        padding-left: 0rem!important; 
+    }    
+ }
