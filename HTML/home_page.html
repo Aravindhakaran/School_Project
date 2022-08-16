@@ -14,21 +14,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 
 <body>
+    <!----------Navbar------------>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/Images/logo_ebrain.png" alt="Ebrain-logo"
-                    class="d-inline-block align-text-top ms-5 nav-image"></a>
+                    class="d-inline-block align-text-top nav-image"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-3">
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
@@ -39,9 +42,9 @@
                         <a class="nav-link" href="/HTML/students_list.html">Students</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" href="#">Workers</a>
+                        <a class="nav-link" href="/HTML/workers_list.html">Workers</a>
                     </li>
-                    <li class="nav-item me-3">
+                    <li class="nav-item">
                         <a class="nav-link" href="/HTML/sign_in.html">Log Out</a>
                     </li>
                 </ul>
@@ -49,56 +52,56 @@
         </div>
     </nav>
 
-
+<!--------Home page----------->
     <section id="home">
-        <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-0">
+<!----Teacher card----->
                 <div class="col">
-                    <div class="card">
+                    <div class="card mt-2">
+                        <img src="/Images/teachers_image.jpg" class="card-img-top" alt="Teachers_Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Teachers</h3>
+                            <p class="card-text">Teachers are one of the most influential and powerful forces
+                                equity, quality in education and key to sustainable.</p>
+                            <p><b>Teachers details... </b> <a class="small" href="/HTML/teachers_list.html">Click here to see</a></p>
+                        </div>
+                    </div>
+                </div>
+<!-----Student card---------------->
+                <div class="col">
+                    <div class="card mt-2">
                         <img src="/Images/students_image.jpg" class="card-img-top" alt="Students_Image">
                         <div class="card-body">
                             <h3 class="card-title">Students</h3>
                             <p class="card-text">Students are not only intellectual but also social and emotional
                                 beings, and all these
-                                dimensions interact to impact learning and performance.</p>
-                            <p class="small"><b>Students details... </b> <a href="/HTML/students_list.html">Click here to see</a></p>
+                                dimensions interact to impact </p>
+                            <p><b>Students details... </b> <a class="small" href="/HTML/students_list.html">Click here to see</a></p>
                         </div>
                     </div>
                 </div>
-
+<!--------Worker card------------->
                 <div class="col">
-                    <div class="card">
-                        <img src="/Images/teachers_image.jpg" class="card-img-top" alt="Teachers_Image">
-                        <div class="card-body">
-                            <h3 class="card-title">Teachers</h3>
-                            <p class="card-text">Teachers are one of the most influential and powerful forces
-                                equity, quality in education and key to sustainable global development.</p>
-                            <p class="small"><b>Teachers details... </b> <a href="/HTML/teachers_list.html">Click here to see</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
+                    <div class="card mt-2">
                         <img src="/Images/workers_image.jpg" class="card-img-top" alt="Workers_Image">
                         <div class="card-body">
                             <h3 class="card-title">Workers</h3>
                             <p class="card-text">A school is a place where students spend most within a day. It is a
-                                special environment
-                                that exists to improve the learning process of children.</p>
-                            <p class="small"><b>Workers details... </b> <a href="/HTML/workers_list.html">Click here to see</a></p>
+                                special that environment  exists to improve. </p>
+                               
+                            <p><b>Workers details... </b> <a class="small" href="/HTML/workers_list.html">Click here to see</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="d-flex flex-column mb-0 px-4 py-4 px-xl-5 bg-primary">
-            <div class="text-white text-center mb-md-0">
+<!--------Footer page------------->
+        <div class="d-flex flex-column mb-0 px-4 py-4 px-xl-5 bg-light footer">
+            <div class="text-center mb-md-0">
                 Copyright © 2022. All rights reserved.
             </div>
         </div>
-
     </section>
 </body>
 </html>

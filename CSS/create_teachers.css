@@ -1,28 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Smooch&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .navbar-brand img{
 height: 40px;
 }
-.card-image{
-    height: 250px;
-}
-.nav-link{
-    color: black;
-}
+
 .active{
     color: blue;
     font-weight: bold;
     border-bottom: 3px solid blue;
 }
-.card{
-    border-radius: 20px;
-}
-.bg-light{
+.navbar{
     border-bottom: 1px solid lightgray;
 }
-.container-fluid{
-    margin-bottom: 4px;
+.footer{
+    border-top: 1px solid lightgray;
+}
+.error{
+    color: red;
+}
+@media (min-width: 320px) and (max-width: 490px) { 
+
+#firstName,#lastName,#phoneNumber,#age,#address,#pin,#gender,#language,#checkboxContent{
+    margin-bottom: 25px;
+}
 }

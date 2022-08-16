@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Smooch&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .img-fluid{
     border-radius: 30px;
@@ -9,6 +13,7 @@
 input{
     height: 50px;
     border-radius: 10px;
+    color:black
 }
 .card{
     border-radius: 25px;
@@ -16,3 +21,15 @@ input{
 .container{
     padding-bottom: 3px;
 }
+.footer{
+    border-top: 1px solid lightgray;
+}
+
+.error{
+    color: red;
+}
+@media (min-width: 1024px) and (max-width: 1440px){
+    *{
+        overflow: hidden;
+    }
+    }

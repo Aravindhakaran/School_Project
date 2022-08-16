@@ -20,17 +20,17 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/Images/logo_ebrain.png" alt="Ebrain-logo"
-                    class="d-inline-block align-text-top ms-5 nav-image"></a>
+                    class="d-inline-block align-text-top nav-image"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-3">
                         <a class="nav-link" href="/HTML/home_page.html">Home</a>
                     </li>
@@ -43,102 +43,117 @@
                     <li class="nav-item me-3">
                         <a class="nav-link" href="/HTML/workers_list.html">Workers</a>
                     </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link" href="#">Log Out</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/sign_in.html">Log Out</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    <!-----------------Students list page-------------------->
     <section>
-        <div class="container-fluid bg">
-            <div class="row">
-                <div class="container mt-1">
-                    <span class="fw-bold ms-5 ps-5 fs-3 content">List Of Students:</span>
-                    <button type="button" class="btn btn-primary float-end mt-2 button me-5"><a
-                            class="text-white nav-link" href="/HTML/create_students.html">+ Add Student</a></button>
-                </div>
+        <div class="container">
+            <div class="d-flex justify-content-between mt-3">
+                <span class="fw-bold fs-3 text-lg-start"><u>Students list</u></span>
+                <a class="text-white btn btn-primary" href="/HTML/create_students.html">+ Add Student</a>
             </div>
 
             <div class="row mt-3 mb-2">
-                <div class="col-lg-10 col-md-10 col-sm-12 ms-auto me-auto bg-muted">
+                <div class="col-sm-12 bg-muted">
                     <div class="table-responsive">
-                        <table class="m-auto table table-bordered table-hover text-center mb-3">
-                            <thead class="bg-primary text-white">
-                                <tr class="thead">
-                                    <th scope="col">S.No</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Father Name</th>
-                                    <th scope="col">DOB</th>
-                                    <th scope="col">Class</th>
-                                </tr>
-                            </thead>
-                            <tbody class="tbody">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Ninika</td>
-                                    <td>Ilayaraja</td>
-                                    <td>02/06/2012</td>
-                                    <td>5<sup>th</sup> Standard</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Akaran</td>
-                                    <td>Aravindh</td>
-                                    <td>28/05/2018</td>
-                                    <td>1<sup>st</sup> Standard</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Iraivan</td>
-                                    <td>Senkodan</td>
-                                    <td>23/12/2008</td>
-                                    <td>6<sup>th</sup> Standard</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Poovizhi</td>
-                                    <td>Senkodan</td>
-                                    <td>09/11/2010</td>
-                                    <td>3<sup>rd</sup> Standard</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Jaiveer</td>
-                                    <td>Mathavan</td>
-                                    <td>07/08/2009</td>
-                                    <td>5<sup>th</sup> Standard</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Nanmozhi</td>
-                                    <td>Ilayaraja</td>
-                                    <td>08/09/2007</td>
-                                    <td>11<sup>th</sup> Standard</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Yaga</td>
-                                    <td>Puratchi Sitthan</td>
-                                    <td>11/10/2009</td>
-                                    <td>10<sup>th</sup> Standard</td>
-                                </tr>
-                            </tbody>
+                        <table class="m-auto table table-hover text-center mb-2">
+                            <tr class="bg-light">
+                                <th scope="col">S.No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Father Name</th>
+                                <th scope="col">DOB</th>
+                                <th scope="col">Phone number</th>
+                                <th scope="col">Gender</th>
+                                <th scope="col">Class</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Ninika</td>
+                                <td>Ilayaraja</td>
+                                <td>02/06/2012</td>
+                                <td>8531850136</td>
+                                <td>Female</td>
+                                <td>5<sup>th</sup> Standard</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Akaran</td>
+                                <td>Aravindh</td>
+                                <td>28/05/2018</td>
+                                <td>9531860135</td>
+                                <td>Male</td>
+                                <td>1<sup>st</sup> Standard</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Iraivan</td>
+                                <td>Senkodan</td>
+                                <td>23/12/2008</td>
+                                <td>9001830179</td>
+                                <td>Male</td>
+                                <td>6<sup>th</sup> Standard</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Poovizhi</td>
+                                <td>Senkodan</td>
+                                <td>09/11/2010</td>
+                                <td>9636890132</td>
+                                <td>Female</td>
+                                <td>3<sup>rd</sup> Standard</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Jaiveer</td>
+                                <td>Mathavan</td>
+                                <td>07/08/2009</td>
+                                <td>8771450139</td>
+                                <td>Male</td>
+                                <td>5<sup>th</sup> Standard</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Nanmozhi</td>
+                                <td>Ilayaraja</td>
+                                <td>08/09/2007</td>
+                                <td>6331750421</td>
+                                <td>Female</td>
+                                <td>11<sup>th</sup> Standard</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
             </div>
+
+            <div class="d-flex justify-content-end">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-primary">
-            <div class="text-white text-center mb-md-0">
+
+        <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-light footer">
+            <div class="text-center mb-md-0">
                 Copyright © 2022. All rights reserved.
             </div>
         </div>
     </section>
-
-
 
 </body>
 
