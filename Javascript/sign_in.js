@@ -12,7 +12,6 @@ $(document).ready(function(){
 
         if(email.length<1){
             $("#email").after('<span class="error">This field is required</span>');
-            return
         }
         let regEx = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;;
             let validEmail = regEx.test(email);

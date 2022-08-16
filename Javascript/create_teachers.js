@@ -35,6 +35,7 @@ $(document).ready(function(){
 if(firstName.length<1){
     $("#firstName").after('<span class="error">This field is required</span>');
     flag = false;
+
 } else{
     flag = true;
 }
