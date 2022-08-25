@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students_List</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -50,14 +54,14 @@
             </div>
         </div>
     </nav>
-
-    <!-----------------Students list page-------------------->
+    <!-----------------Students list Content-------------------->
     <section>
         <div class="container">
             <div class="d-flex justify-content-between mt-3">
                 <span class="fw-bold fs-3 text-lg-start"><u>Students list</u></span>
                 <a class="text-white btn btn-primary" href="/HTML/create_students.html">Create Student</a>
             </div>
+            <input type="hidden" class="form-control" value="api" id="type">
 
             <div class="row mt-3 mb-2">
                 <div class="col-sm-12 bg-muted">
@@ -71,8 +75,12 @@
                                 <th scope="col">Phone number</th>
                                 <th scope="col">Gender</th>
                                 <th scope="col">Class</th>
+                                <th colspan="2">Action</th>
                             </tr>
-                            <tr>
+                            <tbody id="tbody">
+
+                            </tbody>
+                            <!-- <tr>
                                 <th scope="row">1</th>
                                 <td>Ninika</td>
                                 <td>Ilayaraja</td>
@@ -125,7 +133,7 @@
                                 <td>6331750421</td>
                                 <td>Female</td>
                                 <td>11<sup>th</sup> Standard</td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </div>
                 </div>
@@ -147,14 +155,14 @@
                 </ul>
             </div>
         </div>
-
-        <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-light footer">
+<!---------Footer------------>
+        <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-light fixed-bottom  footer">
             <div class="text-center mb-md-0">
                 Copyright © 2022. All rights reserved.
-            </div>
+            </div>                                                                                                                                                            
         </div>
     </section>
 
 </body>
-
+<script src="/Javascript/create_students.js"></script>
 </html>

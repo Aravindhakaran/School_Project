@@ -9,7 +9,6 @@
 .navbar-brand img{
     height: 40px;
 }
-
 .active{
     color: blue;
     font-weight: bold;
@@ -30,6 +29,8 @@
 @media (min-width: 320px) and (max-width: 490px) { 
 
     #firstName,#lastName,#motherName,#gaurdian,#email,#studentClass,#address,#dob,#checkboxContent,#resultTable{
-        margin-bottom: 25px;
+       
     }
+   
 }
+

@@ -1,36 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Smooch&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     height: 40px;
 }
-.navbar{
-        border-bottom: 1px solid lightgray;
+
+.navbar {
+    border-bottom: 1px solid lightgray;
 }
-.footer{
+
+.footer {
     border-top: 1px solid lightgray;
 }
 
-.active{
+.active {
     color: blue;
     font-weight: bold;
     border-bottom: 3px solid blue;
 }
 
-@media (min-width: 320px) and (max-width: 490px) { 
+@media (min-width: 320px) and (max-width: 490px) {
 
-    .button{
+    .button {
         margin-right: 2px !important;
     }
+
     .ms-5 {
-        margin-left: 0rem!important;
+        margin-left: 0rem !important;
     }
+
     .ps-5 {
-        padding-left: 0rem!important; 
-    }    
- }
+        padding-left: 0rem !important;
+    }
+}

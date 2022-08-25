@@ -17,17 +17,17 @@
 </head>
 
 <body>
-  
+
   <section>
     <div class="container-fluid">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-9 col-lg-6 col-xl-5">
           <img src="/Images/loginBg.svg" alt="Sample image">
         </div>
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 p-5">
+        <div class="col-md-8 col-lg-6 col-xl-5 offset-xl-1 p-5">
           <form id="sign-in">
             <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-              <h3 class="fs-2 fw-normal mb-3 me-3">Sign in</h3>
+              <h3 class="fs-2 fw-normal mb-3 me-3">Sign In</h3>
             </div>
 
             <div class="form-outline mb-4">
@@ -41,6 +41,7 @@
             <div class="d-flex justify-content-between align-items-center">
               <div class="form-check">
                 <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" />
+               
                 <label>
                   Remember me
                 </label>
@@ -48,9 +49,11 @@
               <a href="#" class="text-body">Forgot password?</a>
             </div>
 
-            <div class="text-center text-lg-start mt-2 pt-2">
+            <div class="text-center text-lg-start mt-2 pt-2 ps-1">
               <a href=""><button type="button" class="btn btn-primary btn-lg signbutton"
                   id="login-button">Login</button></a>
+
+                  <div class="mt-2" id="errorMessage"></div>
               <p class="lead fw-normal mt-2 pt-1 mb-0">Don't have an account? <a href="sign_up.html"
                   class="link-primary">Sign Up</a></p>
             </div>
@@ -58,6 +61,7 @@
         </div>
       </div>
     </div>
+
     <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-light footer">
       <div class="text-center mb-md-0">
         Copyright © 2022. All rights reserved.

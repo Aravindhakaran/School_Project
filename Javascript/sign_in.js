@@ -12,6 +12,7 @@ $(document).ready(function(){
 
         if(email.length<1){
             $("#email").after('<span class="error">This field is required</span>');
+            return
         }
         let regEx = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;;
             let validEmail = regEx.test(email);
@@ -31,24 +32,28 @@ $(document).ready(function(){
         {
              $("#checkbox").after('<span class="error"> Please select checkbox</span>' );
              valid = false;
-        }
-        else{
-             valid = true
-        }
+        }else{
+            valid = true
+       }
+        
 let result = {email,password,checkbox};
 console.log(result);
 
 // email = email.value;
 // password = password.value;
 
-    localStorage.setItem("email",email);
-    localStorage.setItem("password",password);
+    // localStorage.setItem("email",email);
+    // localStorage.setItem("password",password);
 
-        if(valid){
-            debugger
-            window.location.href="/HTML/home_page.html";
+    let signIn = localStorage.getItem("signUpList")? JSON.parse(localStorage.getItem("signUpList")): [];
+    for(let i=0; i<signIn.length; i++){
+        if(signIn[i].email==email && signIn[i].confirmpassword==password){
+            window.location.href="home_page.html"; 
+        } else{
+            $("#errorMessage").after('<span class="error">Please give registered Email and Password</span>');
         }
-
-
+    }
+    debugger
+    window.location.href="/HTML/home_page.html"; 
         });
 });

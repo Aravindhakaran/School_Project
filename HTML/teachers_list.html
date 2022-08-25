@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teachers_List</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -19,6 +23,7 @@
 </head>
 
 <body>
+    <!----------Navbar----------->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -50,9 +55,7 @@
             </div>
         </div>
     </nav>
-
-    <!------------------Teachers list page----------------->
-
+    <!------------------Teachers list content----------------->
     <section>
         <div class="container">
             <div class=" d-flex justify-content-between mt-3">
@@ -60,73 +63,86 @@
                 <a class="text-white btn btn-primary" href="/HTML/create_teachers.html">Create Teacher</a>
             </div>
 
+            <input type="hidden" class="form-control" value="api" id="type">
+
             <div class="row mt-2 mb-2">
                 <div class="col-sm-12 bg-muted">
                     <div class="table-responsive">
                         <table class="m-auto table table-hover text-center mb-3">
                             <tr class="bg-light">
                                 <th scope="col">S.No</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Degree</th>
-                                <th scope="col">DOB</th>
+                                <th scope="col">First name</th>
+                                <th scope="col">Last name</th>
+                                <th scope="col">Qualification</th>
+                                <th scope="col">Age</th>
                                 <th scope="col">Gender</th>
                                 <th scope="col">Phone number</th>
-                                <th scope="col">Standard</th>
+                                <th scope="col">City</th>
+                                <th colspan="2">Action</th>
                             </tr>
-                            <tr>
+                            <tbody id="tbody">
+
+                            </tbody>
+                            <!-- <tr>
                                 <th scope="row">1</th>
                                 <td>Aravindh</td>
+                                <td>Akaran</td>
                                 <td>B.Tech</td>
-                                <td>02/06/1991</td>
+                                <td>30</td>
                                 <td>Male</td>
                                 <td>8531850136</td>
-                                <td>9<sup>th</sup> Standard</td>
+                                <td>Thanjavur</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Anu</td>
+                                <td>Mohan</td>
                                 <td>M.Tech</td>
-                                <td>17/01/1990</td>
+                                <td>42</td>
                                 <td>Female</td>
                                 <td>9531950934</td>
-                                <td>12<sup>th</sup> Standard</td>
+                                <td>1Thanjavur</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Dayal</td>
+                                <td>Binny</td>
                                 <td>B.E</td>
-                                <td>23/12/1993</td>
+                                <td>51</td>
                                 <td>Male</td>
                                 <td>8661800130</td>
-                                <td>11<sup>th</sup> Standard</td>
+                                <td>Thanjavur</td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td>Nithya</td>
+                                <td>Priya</td>
                                 <td>M.Sc</td>
-                                <td>09/11/1986</td>
+                                <td>32</td>
                                 <td>Female</td>
                                 <td>9131850156</td>
-                                <td>7<sup>th</sup> Standard</td>
+                                <td>Thanjavur</td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
                                 <td>Vasanth</td>
+                                <td>Kumar</td>
                                 <td>B.Sc</td>
-                                <td>07/08/1988</td>
+                                <td>39</td>
                                 <td>Male</td>
                                 <td>7531650225</td>
-                                <td>8<sup>th</sup> Standard</td>
+                                <td>Thanjavur</td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
                                 <td>Yazhini</td>
+                                <td>Murugan</td>
                                 <td>MBA</td>
-                                <td>08/09/1981</td>
+                                <td>44</td>
                                 <td>Female</td>
                                 <td>6356050453</td>
-                                <td>6<sup>th</sup> Standard</td>
-                            </tr>
+                                <td>Thanjavur</td>`
+                            </tr> -->
                         </table>
                     </div>
                 </div>
@@ -148,8 +164,8 @@
                 </ul>
             </div>
         </div>
-
-        <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-light footer">
+<!---------Footer------------>
+        <div class="d-flex flex-column mb-0 py-4 px-4 px-xl-5 bg-light fixed-bottom footer">
             <div class="text-center mb-md-0">
                 Copyright © 2022. All rights reserved.
             </div>
@@ -158,5 +174,5 @@
 
 
 </body>
-
+<script src="/Javascript/create_teachers.js"></script>
 </html>
