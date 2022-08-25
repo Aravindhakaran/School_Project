@@ -312,7 +312,7 @@ function getUpdate(id){
 };
 
 function geteditUpdate(index,id){
-  window.open("/HTML/create.workers.html?id="+id); 
+  window.location.href = "/HTML/create.workers.html?id="+id; 
 };
 
 function update(listofWorker){

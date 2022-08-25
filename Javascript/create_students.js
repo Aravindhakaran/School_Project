@@ -282,7 +282,7 @@ $(document).ready(function(){
     });
    };
    function geteditUpdate(index,id){
-    window.open("/HTML/create_students.html?id="+id);
+    window.location.href= "/HTML/create_students.html?id="+id;
    };
 
    function update(listofStudents){

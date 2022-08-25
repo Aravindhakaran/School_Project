@@ -1,7 +1,6 @@
 
+signUp=[];
 $(document).ready(function(){
-
-    signUpList=[];
 
     $("#register-button").click(function(e){
         e.preventDefault();
@@ -43,28 +42,29 @@ $(document).ready(function(){
             valid = true;
         }
 
-        let results = {name,email,password,confirmpassword,checkbox};
-        console.log(results);
-
-        // localStorage.setItem("name",name);
-        // localStorage.setItem("email",email);
-        // localStorage.setItem("password",password);
-        // localStorage.setItem("confirmpassword",confirmpassword);
-
-        result = {
+        signUpList = {
            name:name,
            email:email,
            password:password,
            confirmpassword:confirmpassword,
            checkbox:checkbox
         }
-        signUpList.push(result);
         console.log(signUpList);
-        localStorage.setItem("signUpList",JSON.stringify(signUpList));
-
-        if(valid){
-            debugger
-           window.location.href="sign_in.html"; 
-        }
-    });
-});
+     
+            $.ajax({
+              url: "https://62ff3a1734344b6431f4dbde.mockapi.io/user",
+              method: "post",
+              data: signUpList,
+              dataType: "json",
+              success: function (result) {
+                alert("Successfully Registered");
+                signUp.push(result);
+              
+                window.location.href = "/HTML/sign_in.html";
+              },
+              error: function (error) {
+                console.log(error);
+              },
+            });
+          });
+        });

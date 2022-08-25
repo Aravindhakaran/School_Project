@@ -39,11 +39,7 @@ $(document).ready(function(){
 let result = {email,password,checkbox};
 console.log(result);
 
-// email = email.value;
-// password = password.value;
 
-    // localStorage.setItem("email",email);
-    // localStorage.setItem("password",password);
 
     let signIn = localStorage.getItem("signUpList")? JSON.parse(localStorage.getItem("signUpList")): [];
     for(let i=0; i<signIn.length; i++){

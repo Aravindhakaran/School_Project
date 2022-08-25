@@ -289,7 +289,7 @@ console.log(error);
     });
 };
 function geteditUpdate(index,id){
-  window.open("/HTML/create_teachers.html?id="+id);
+  window.location.href = "/HTML/create_teachers.html?id="+id;
 };
 
 function update(listofTeacher){
